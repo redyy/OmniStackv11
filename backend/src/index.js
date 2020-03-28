@@ -8,7 +8,7 @@ const app = express();
  // origin: 'http://meuapp.com'
 //}))
 
-app.cors(cors())
+app.use(cors())
 app.use(express.json());
 app.use(routes);
 
