@@ -61,13 +61,24 @@ export default StyleSheet.create({
     justifyContent: 'space-between',
   },
 
-  action: {
-    backgroundColor: '#e02041',
-    borderRadius: 0,
+  wpp: {
+    backgroundColor: '#25D366',
+    borderRadius: 5,
     height: 50,
     width: '48%',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    marginBottom: 20
+  },
+
+  email: {
+    backgroundColor: '#B23121',
+    borderRadius: 5,
+    height: 50,
+    width: '48%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 20
   },
 
   actionText: {

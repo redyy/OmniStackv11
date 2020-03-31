@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { Feather } from '@expo/vector-icons/';
 import { useNavigation } from '@react-navigation/native';
-import {View, Text, FlatList, Image, TouchableOpacity} from 'react-native';
+import {View, Text, FlatList, ScrollView, Image, TouchableOpacity} from 'react-native';
 
 import api from '../../services/api'
 
@@ -46,6 +46,12 @@ export default function Incidents(){
   }, [])
 
   return(
+    <ScrollView 
+    scrollEnabled={true}
+    showsVerticalScrollIndicator= {false}
+    onEndReached={loadIncidents}
+    onEndReachedThreshold={0.2}
+    >
     <View style={styles.container}>
       <View style={styles.header}>
         <Image source={logoImg}/>
@@ -83,5 +89,6 @@ export default function Incidents(){
       )}
       />
     </View>
+    </ScrollView>
   );
 }

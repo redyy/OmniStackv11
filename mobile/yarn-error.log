@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: EPERM: operation not permitted, unlink 'C:\Users\madru\Desktop\omnistack11\mobile\node_modules\@babel\generator\node_modules\.bin'
+  Error: EPERM: operation not permitted, unlink 'C:\Users\madru\Desktop\omnistack11\mobile\node_modules\@babel\helper-compilation-targets\node_modules\.bin'
 
 npm manifest: 
   {
